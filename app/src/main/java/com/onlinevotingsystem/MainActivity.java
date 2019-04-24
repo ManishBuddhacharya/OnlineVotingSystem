@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import fragments.SignupFragment;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnLogin;
     private TextView tvSignup;
@@ -32,15 +34,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        if( btnLogin.getId() == v.getId() )
-        {
-            //Do Button1 click operations here
+        switch (v.getId()) {
+            case R.id.btnLogin:
+//                SignupFragment signupFragment = new SignupFragment();
+//                fragmentTransaction.replace(R.id.layoutMain, signupFragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
+                break;
+
+            case R.id.tvSignup:
+                SignupFragment signupFragment = new SignupFragment();
+                fragmentTransaction.replace(R.id.layoutMain, signupFragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
 
         }
-        else if( tvSignup.getId() == v.getId() )
-        {
 
-
-        }
     }
 }
