@@ -1,5 +1,7 @@
 package com.onlinevotingsystem;
 
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         if( btnLogin.getId() == v.getId() )
         {
             //Do Button1 click operations here
@@ -36,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if( tvSignup.getId() == v.getId() )
         {
 
-            // Do Button2 click operations here
 
         }
     }
