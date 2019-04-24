@@ -1,5 +1,6 @@
 package com.onlinevotingsystem;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -36,10 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         switch (v.getId()) {
             case R.id.btnLogin:
-//                SignupFragment signupFragment = new SignupFragment();
-//                fragmentTransaction.replace(R.id.layoutMain, signupFragment);
-//                fragmentTransaction.addToBackStack(null);
-//                fragmentTransaction.commit();
+                 Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                 startActivity(intent);
                 break;
 
             case R.id.tvSignup:
