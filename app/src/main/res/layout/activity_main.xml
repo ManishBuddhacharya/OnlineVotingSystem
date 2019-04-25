@@ -51,6 +51,7 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="Email / Username"
                 android:textColor="#fff"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -70,7 +71,9 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="Password"
                 android:textColor="#fff"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/etPassword"

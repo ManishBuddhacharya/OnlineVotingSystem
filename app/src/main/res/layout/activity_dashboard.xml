@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardActivity"
-    android:orientation="vertical"
     android:background="@drawable/bg1"
+    android:orientation="vertical"
     android:paddingLeft="24dp"
     android:paddingTop="56dp"
-    android:paddingRight="24dp">
+    android:paddingRight="24dp"
+    tools:context=".DashboardActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -30,8 +30,7 @@
         android:paddingLeft="20dp"
         android:paddingTop="40dp"
         android:paddingRight="20dp"
-        android:paddingBottom="40dp"
-        android:id="@+id/layoutMain">
+        android:paddingBottom="40dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -51,9 +50,6 @@
             android:text="Email / Username"
             android:textColor="#fff"
             android:textStyle="bold" />
-
-
-
 
 
     </LinearLayout>
@@ -67,8 +63,7 @@
         android:paddingLeft="20dp"
         android:paddingTop="40dp"
         android:paddingRight="20dp"
-        android:paddingBottom="40dp"
-        android:id="@+id/layoutMain">
+        android:paddingBottom="40dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -88,9 +83,6 @@
             android:text="Email / Username"
             android:textColor="#fff"
             android:textStyle="bold" />
-
-
-
 
 
     </LinearLayout>
@@ -104,8 +96,7 @@
         android:paddingLeft="20dp"
         android:paddingTop="40dp"
         android:paddingRight="20dp"
-        android:paddingBottom="40dp"
-        android:id="@+id/layoutMain">
+        android:paddingBottom="40dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -125,9 +116,6 @@
             android:text="Email / Username"
             android:textColor="#fff"
             android:textStyle="bold" />
-
-
-
 
 
     </LinearLayout>
